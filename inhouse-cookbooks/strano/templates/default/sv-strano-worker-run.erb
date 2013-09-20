@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+HOME_PATH=<%= @options['home_path'] %>
+APP_PATH=<%= @options['app_path'] %>
+TARGET_USER=<%= @options['target_user'] %>
+TARGET_RUBY=<%= @options['target_ruby'] == "default" ? "`cat /home/$TARGET_USER/.ruby-version`" : @options['target_ruby'] %>
+<% if @options.has_key? 'memlimit' -%>
+ulimit -v <%= @options['memlimit'] -%>
+<% end -%>
+CHRUBY_BIN=/opt/chruby/bin/chruby-exec
+
+export rvm_ignore_rvmrc=1
+
+cd $APP_PATH/current
+
+HOME=$HOME_PATH RAILS_ENV="<%= @options['target_env'] %>" STDOUT=1 chpst -u $TARGET_USER $CHRUBY_BIN $TARGET_RUBY -- bundle exec rake bg:worker  --trace

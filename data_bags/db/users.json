@@ -1,6 +1,8 @@
 {
   "id": "users",
   "users": {
-    "redmine": {}
+    "redmine": {},
+    "chiliproject": {},
+    "strano": {}
   }
 }

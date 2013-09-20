@@ -1,9 +1,19 @@
 {
   "id": "databases",
   "databases": {
+    "chiliproject": {
+      "options": {
+        "owner": "chiliproject"
+      }
+    },
     "redmine": {
       "options": {
         "owner": "redmine"
+      }
+    },
+    "strano": {
+      "options": {
+        "owner": "strano"
       }
     }
   }

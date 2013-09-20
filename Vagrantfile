@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
     main.vm.box = "ubuntu12.04-chef11-chruby"
     main.vm.hostname = "etalon"
     config.vm.network :forwarded_port, guest: 8080, host: 7070
+    config.vm.network :forwarded_port, guest: 80, host: 7071
     main.vm.provider :virtualbox do |vb|
       vb.customize ["modifyvm", :id, "--memory", "2048"]
     end
@@ -14,7 +15,8 @@ Vagrant.configure("2") do |config|
       chef.encrypted_data_bag_secret_key_path = "./.chef/encrypted_data_bag_secret"
 
       chef.add_role "base"
-      chef.add_role "redmine"
+      chef.add_role "strano"
+      chef.add_role "chiliproject"
     end
   end
 end

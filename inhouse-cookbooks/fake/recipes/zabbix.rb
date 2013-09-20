@@ -1,4 +1,4 @@
-zabbix_connect "connect to kupikupon zabbix" do
+zabbix_connect "connect to zabbix" do
   apiurl "http://127.0.0.1/api_jsonrpc.php"
   user "Admin"
   password "zabbix"

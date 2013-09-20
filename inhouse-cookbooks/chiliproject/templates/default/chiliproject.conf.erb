@@ -1,0 +1,49 @@
+upstream chiliproject-unicorn-app {
+  server <%= @backend %>;
+}
+
+server {
+  listen 8080;
+#  server_name deploy.fake.ru;
+  resolver_timeout 2s;
+  charset utf-8;
+
+  root <%= @app_path %>/current/public/;
+
+  <% @frontend_servers_ip.each do |ip| -%>
+  set_real_ip_from <%= ip %>;
+  <% end -%>
+
+  access_log /var/log/nginx/strano-access.log;
+  error_log  /var/log/nginx/strano-error.log;
+  client_max_body_size 256m;
+  gzip_static on;
+
+  location / {
+    try_files $uri /system/maintenance.html @unicorn;
+  }
+
+  location ^~ /system/ {
+    root <%= @app_path %>/current/public/;
+  }
+
+  location @unicorn {
+    satisfy any;
+
+    <% @application_servers_ip.each do |ip| -%>
+    allow <%= ip %>;
+    <% end -%>
+
+    proxy_pass http://chiliproject-unicorn-app;
+    proxy_redirect off;
+    proxy_set_header Host $host<%= ":#{@vagrant_port}" if @vagrant_port -%>;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    proxy_read_timeout 300;
+
+    proxy_buffer_size 16k;
+    proxy_buffers 32 16k;
+  }
+}
+

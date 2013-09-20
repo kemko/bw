@@ -1,3 +1,12 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.4.2)
+    partial_search (1.0.2)
+    rvm (0.0.4)
+      apt (>= 0)
+      build-essential (>= 0)
+
 GIT
   remote: git@github.com:evilmartians/chef-nginx.git
   ref: master
@@ -95,6 +104,14 @@ GIT
     apt (2.1.1)
 
 GIT
+  remote: git@github.com:opscode-cookbooks/ssh_known_hosts.git
+  ref: master
+  sha: c13eed20b074cd377db0daaca76f4c5b58b12830
+  specs:
+    ssh_known_hosts (1.0.3)
+      partial_search (>= 0.0.0)
+
+GIT
   remote: https://github.com/fnichol/chef-user.git
   ref: master
   sha: ce45d05e13491a82cbb5a2c36292391f3a1aaa36
@@ -121,13 +138,27 @@ PATH
     base (0.1.0)
 
 PATH
+  remote: inhouse-cookbooks/chiliproject
+  specs:
+    chiliproject (0.0.0)
+
+PATH
   remote: inhouse-cookbooks/fake
   specs:
     fake (0.1.0)
 
+PATH
+  remote: inhouse-cookbooks/strano
+  specs:
+    strano (0.0.1)
+      lvm (>= 0.0.0)
+      rvm (>= 0.0.0)
+      sudo (>= 0.0.0)
+
 DEPENDENCIES
   apt (>= 0)
   base (>= 0)
+  chiliproject (>= 0)
   fake (>= 0)
   lvm (>= 0)
   nginx (>= 0)
@@ -138,6 +169,8 @@ DEPENDENCIES
   redmine (>= 0)
   ruby (>= 0)
   runit (>= 0)
+  ssh_known_hosts (>= 0)
+  strano (>= 0)
   sudo (>= 0)
   sysctl (>= 0)
   timezone (>= 0)

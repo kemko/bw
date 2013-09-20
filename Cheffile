@@ -52,3 +52,11 @@ cookbook "redmine",
 cookbook "runit",
   :git => "git@github.com:express42-cookbooks/runit.git"
 
+cookbook "strano",
+  :path => "inhouse-cookbooks/strano"
+
+cookbook "chiliproject",
+  :path => "inhouse-cookbooks/chiliproject"
+
+cookbook "ssh_known_hosts",
+  :git => "git@github.com:opscode-cookbooks/ssh_known_hosts.git"

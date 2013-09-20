@@ -1,0 +1,6 @@
+production:
+  public_ssh_key: MYPUBLICKEY
+  github_key: <%= node["strano"]["application"]["github_key"]  %>
+  github_secret: <%= node["strano"]["application"]["github_secret"] %>
+  allow_organizations:
+  allow_users: true
