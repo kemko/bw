@@ -4,51 +4,35 @@ cookbook 'base', :path => 'inhouse-cookbooks/base'
 
 cookbook 'fake', :path => 'inhouse-cookbooks/fake'
 
-cookbook "timezone",
-  :git => "git@github.com:express42-cookbooks/timezone.git"
+cookbook "timezone", :path => 'bw-cookbooks/timezone'
 
-cookbook "sysctl",
-  :git => "git@github.com:express42-cookbooks/sysctl.git"
+cookbook "sysctl", :path => 'bw-cookbooks/sysctl'
 
-cookbook "apt",
-  :git => "git@github.com:opscode-cookbooks/apt.git"
+cookbook "apt", :path => 'bw-cookbooks/apt'
 
-cookbook "ntp",
-  :git => "https://github.com/opscode-cookbooks/ntp.git"
+cookbook "ntp", :path => 'bw-cookbooks/ntp'
 
-cookbook "user",
-  :git => "https://github.com/fnichol/chef-user.git"
+cookbook "user", :path => 'bw-cookbooks/user'
 
-cookbook "sudo",
-  :git => "git@github.com:express42-cookbooks/sudo.git"
+cookbook "sudo", :path => 'bw-cookbooks/sudo'
 
-cookbook "lvm",
-  :git => "https://github.com/opscode-cookbooks/lvm.git"
+cookbook "lvm", :path => 'bw-cookbooks/lvm'
 
-cookbook "zabbix",
-  :git => "git@github.com:express42-cookbooks/zabbix.git"
+cookbook "zabbix", :path => 'bw-cookbooks/zabbix'
 
-cookbook "zabbix-server",
-  :git => "git@github.com:express42-cookbooks/zabbix-server.git"
+cookbook "zabbix-server", :path => 'bw-cookbooks/zabbix-server'
 
-cookbook "partition",
-  :git => "git@github.com:express42-cookbooks/partition.git"
+cookbook "partition", :path => 'bw-cookbooks/partition'
 
-cookbook "postgresql",
-  :git => "git@github.com:express42-cookbooks/postgresql.git"
+cookbook "postgresql", :path => 'bw-cookbooks/postgresql'
 
-cookbook "php",
-  :git => "git@github.com:express42-cookbooks/php.git"
+cookbook "php", :path => 'bw-cookbooks/php'
 
-cookbook "nginx",
-  :git => "git@github.com:evilmartians/chef-nginx.git"
+cookbook "nginx", :path => 'bw-cookbooks/nginx'
 
-cookbook "ruby",
-  :git => "git@github.com:express42-cookbooks/ruby.git"
+cookbook "ruby", :path => 'bw-cookbooks/ruby'
+
+cookbook "runit", :path => 'bw-cookbooks/runit'
 
 cookbook "redmine",
   :git => "git@github.com:express42-cookbooks/redmine.git"
-
-cookbook "runit",
-  :git => "git@github.com:express42-cookbooks/runit.git"
-
