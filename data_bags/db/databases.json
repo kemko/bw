@@ -1,0 +1,10 @@
+{
+  "id": "databases",
+  "databases": {
+    "redmine": {
+      "options": {
+        "owner": "redmine"
+      }
+    }
+  }
+}

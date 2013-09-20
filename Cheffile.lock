@@ -1,0 +1,147 @@
+GIT
+  remote: git@github.com:evilmartians/chef-nginx.git
+  ref: master
+  sha: d0084e014b469a79ad7ab90635e20a06cbcafbe3
+  specs:
+    nginx (2.2.0)
+
+GIT
+  remote: git@github.com:express42-cookbooks/partition.git
+  ref: master
+  sha: 2fa3aa3b1c9badaebcaeb63f05db37b138dec369
+  specs:
+    partition (0.2.0)
+      lvm (>= 0.8.6)
+      zabbix (>= 0.1.1)
+
+GIT
+  remote: git@github.com:express42-cookbooks/php.git
+  ref: master
+  sha: 4764b5b668462208740f7eda1f4ddc5182d0ea1f
+  specs:
+    php (0.1.0)
+
+GIT
+  remote: git@github.com:express42-cookbooks/postgresql.git
+  ref: master
+  sha: ccf15076a95dc50059ff9cbc06cb6028d217341c
+  specs:
+    postgresql (0.2.3)
+
+GIT
+  remote: git@github.com:express42-cookbooks/redmine.git
+  ref: master
+  sha: d050e49e9de3f6c4d3f945fd858d3a5c8c079c7f
+  specs:
+    redmine (2.0.0)
+
+GIT
+  remote: git@github.com:express42-cookbooks/ruby.git
+  ref: master
+  sha: 4cfa866373fb90dcb8ad4484d7eabceb5e56c5d5
+  specs:
+    ruby (0.1.2)
+
+GIT
+  remote: git@github.com:express42-cookbooks/runit.git
+  ref: master
+  sha: d2e2f0bb1cd131db0d36f0baf4429585e0c360e4
+  specs:
+    runit (0.14.3)
+
+GIT
+  remote: git@github.com:express42-cookbooks/sudo.git
+  ref: master
+  sha: e76baf470e25dac18014b423aa712b854c87d94c
+  specs:
+    sudo (1.1.1)
+
+GIT
+  remote: git@github.com:express42-cookbooks/sysctl.git
+  ref: master
+  sha: ceca1b382f1cc434d3ba43502c301bfbe7c9ffbb
+  specs:
+    sysctl (0.2.2)
+
+GIT
+  remote: git@github.com:express42-cookbooks/timezone.git
+  ref: master
+  sha: cd8e67dd1076264b0d2ea0864432b74eaefffc8a
+  specs:
+    timezone (0.1.0)
+
+GIT
+  remote: git@github.com:express42-cookbooks/zabbix-server.git
+  ref: master
+  sha: 8ee553759285af2bdb1ae3ce4261de8a0ee3f31b
+  specs:
+    zabbix-server (0.1.0)
+      lvm (>= 0.8.6)
+      nginx (>= 2.2.0)
+      partition (>= 0.1.0)
+
+GIT
+  remote: git@github.com:express42-cookbooks/zabbix.git
+  ref: master
+  sha: ef96256ef9848f0332a9249e89f46e006ae58b60
+  specs:
+    zabbix (0.2.0)
+
+GIT
+  remote: git@github.com:opscode-cookbooks/apt.git
+  ref: master
+  sha: b58c75536300794e5b5ffa8747fc9e6c48a4e5ce
+  specs:
+    apt (2.1.1)
+
+GIT
+  remote: https://github.com/fnichol/chef-user.git
+  ref: master
+  sha: ce45d05e13491a82cbb5a2c36292391f3a1aaa36
+  specs:
+    user (0.3.1)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/lvm.git
+  ref: master
+  sha: 5f76a85d4bf5ea56b37bf85e8326a8d7386f7054
+  specs:
+    lvm (0.8.13)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/ntp.git
+  ref: master
+  sha: 6e47826c939add35cec2a5b528cd187c7eb3f3b6
+  specs:
+    ntp (1.4.1)
+
+PATH
+  remote: inhouse-cookbooks/base
+  specs:
+    base (0.1.0)
+
+PATH
+  remote: inhouse-cookbooks/fake
+  specs:
+    fake (0.1.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  base (>= 0)
+  fake (>= 0)
+  lvm (>= 0)
+  nginx (>= 0)
+  ntp (>= 0)
+  partition (>= 0)
+  php (>= 0)
+  postgresql (>= 0)
+  redmine (>= 0)
+  ruby (>= 0)
+  runit (>= 0)
+  sudo (>= 0)
+  sysctl (>= 0)
+  timezone (>= 0)
+  user (>= 0)
+  zabbix (>= 0)
+  zabbix-server (>= 0)
+

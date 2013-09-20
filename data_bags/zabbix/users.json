@@ -1,0 +1,11 @@
+{
+  "id": "users",
+  "users": {
+    "zabbix": {
+      "options": {
+        "password": "yosJVAtYa4L4F7Q",
+        "superuser": false
+      }
+    }
+  }
+}

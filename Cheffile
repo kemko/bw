@@ -1,0 +1,54 @@
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'base', :path => 'inhouse-cookbooks/base'
+
+cookbook 'fake', :path => 'inhouse-cookbooks/fake'
+
+cookbook "timezone",
+  :git => "git@github.com:express42-cookbooks/timezone.git"
+
+cookbook "sysctl",
+  :git => "git@github.com:express42-cookbooks/sysctl.git"
+
+cookbook "apt",
+  :git => "git@github.com:opscode-cookbooks/apt.git"
+
+cookbook "ntp",
+  :git => "https://github.com/opscode-cookbooks/ntp.git"
+
+cookbook "user",
+  :git => "https://github.com/fnichol/chef-user.git"
+
+cookbook "sudo",
+  :git => "git@github.com:express42-cookbooks/sudo.git"
+
+cookbook "lvm",
+  :git => "https://github.com/opscode-cookbooks/lvm.git"
+
+cookbook "zabbix",
+  :git => "git@github.com:express42-cookbooks/zabbix.git"
+
+cookbook "zabbix-server",
+  :git => "git@github.com:express42-cookbooks/zabbix-server.git"
+
+cookbook "partition",
+  :git => "git@github.com:express42-cookbooks/partition.git"
+
+cookbook "postgresql",
+  :git => "git@github.com:express42-cookbooks/postgresql.git"
+
+cookbook "php",
+  :git => "git@github.com:express42-cookbooks/php.git"
+
+cookbook "nginx",
+  :git => "git@github.com:evilmartians/chef-nginx.git"
+
+cookbook "ruby",
+  :git => "git@github.com:express42-cookbooks/ruby.git"
+
+cookbook "redmine",
+  :git => "git@github.com:express42-cookbooks/redmine.git"
+
+cookbook "runit",
+  :git => "git@github.com:express42-cookbooks/runit.git"
+
