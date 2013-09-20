@@ -29,13 +29,6 @@ GIT
     postgresql (0.2.3)
 
 GIT
-  remote: git@github.com:express42-cookbooks/redmine.git
-  ref: master
-  sha: d050e49e9de3f6c4d3f945fd858d3a5c8c079c7f
-  specs:
-    redmine (2.0.0)
-
-GIT
   remote: git@github.com:express42-cookbooks/ruby.git
   ref: master
   sha: 4cfa866373fb90dcb8ad4484d7eabceb5e56c5d5
@@ -124,6 +117,11 @@ PATH
   remote: inhouse-cookbooks/fake
   specs:
     fake (0.1.0)
+
+PATH
+  remote: inhouse-cookbooks/redmine
+  specs:
+    redmine (2.0.0)
 
 DEPENDENCIES
   apt (>= 0)

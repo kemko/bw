@@ -46,8 +46,7 @@ cookbook "nginx",
 cookbook "ruby",
   :git => "git@github.com:express42-cookbooks/ruby.git"
 
-cookbook "redmine",
-  :git => "git@github.com:express42-cookbooks/redmine.git"
+cookbook "redmine", :path => 'inhouse-cookbooks/redmine'
 
 cookbook "runit",
   :git => "git@github.com:express42-cookbooks/runit.git"
