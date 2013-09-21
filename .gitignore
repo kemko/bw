@@ -6,4 +6,5 @@
 .*.sw[a-z]
 *.un~
 /cookbooks
+/bw-cookbooks
 tmp/
