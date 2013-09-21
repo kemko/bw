@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:express42-cookbooks/redmine.git
+  remote: https://github.com/express42-cookbooks/redmine.git
   ref: master
   sha: d050e49e9de3f6c4d3f945fd858d3a5c8c079c7f
   specs:
