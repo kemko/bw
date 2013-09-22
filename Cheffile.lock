@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/express42-cookbooks/redmine.git
-  ref: master
-  sha: d050e49e9de3f6c4d3f945fd858d3a5c8c079c7f
+  ref: bw-4
+  sha: 0c475349877bf338f90e424f97403fc000217443
   specs:
     redmine (2.0.0)
 
